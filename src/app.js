@@ -13,19 +13,7 @@ const store = configureStore()
 
 const state = store.getState()
 
-const visibleExpenses = getVisExp(state.expenses, state.filters)
 
-console.log(store.getState())
-
-console.log(visibleExpenses)
-
-store.dispatch(addExpense(
-    {
-        description: 'test',
-        amount: '123.45',
-        createdAt: 1000
-    }
-))
 
 
 const jsx = (
