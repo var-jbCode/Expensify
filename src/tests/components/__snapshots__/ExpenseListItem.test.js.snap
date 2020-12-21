@@ -13,6 +13,8 @@ exports[`should render Expense List item with Expense 1`] = `
     </h3>
   </NavLink>
   <p>
+     Description: 
+    Gum
      Amount: 
     195
     , Created Date: 
