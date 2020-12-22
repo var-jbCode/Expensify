@@ -8,7 +8,7 @@ import numeral from 'numeral'
 numeral.register('locale', 'GB', {
     delimiters: {
         thousands: ' ',
-        decimal: ','
+        decimal: '.'
     },
     abbreviations: {
         thousand: 'k',
