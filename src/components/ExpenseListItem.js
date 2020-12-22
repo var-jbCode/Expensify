@@ -31,10 +31,8 @@ export const ExpenseListItem = ({ description, amount, createdAt, id }) => (
         <NavLink to={`/edit/${id}`} activeClassName="is-active" exact={true}>
             <h3>{description}</h3>
         </NavLink>
-        <p> <b>Amount:</b>
-            {numeral(amount).format('$0,0.00')}
-            <div />
-            <b>Created: </b>
+        <p> {numeral(amount).format('$0,0.00')}
+            -
             {moment(createdAt).format('Do MMMM, YYYY')}
         </p>
     </div>
