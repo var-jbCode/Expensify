@@ -5,6 +5,7 @@ exports[`should render not found 1`] = `
   <p>
     This is from I'm a rolling the beans Home 
   </p>
+  <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>

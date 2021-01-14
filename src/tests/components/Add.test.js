@@ -1,12 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme'
 import { Add } from '../../components/Add'
-import expenses from '../fixtures/expenses'
 
 test('should render add expense page correctly', () => {
-    const onSubmit = jest.fn()
+    const startAddExpense = jest.fn()
     const history = { push: jest.fn() }
-    const wrapper = shallow(<Add onSubmit={onSubmit} history={history} />)
+    const wrapper = shallow(<Add startAddExpense={startAddExpense} history={history} />)
     expect(wrapper).toMatchSnapshot()
 })
 

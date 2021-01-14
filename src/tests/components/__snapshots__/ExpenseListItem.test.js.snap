@@ -4,7 +4,7 @@ exports[`should render Expense List item with Expense 1`] = `
 <div>
   <NavLink
     activeClassName="is-active"
-    ariaCurrent="true"
+    aria-current="page"
     exact={true}
     to="/edit/1"
   >
@@ -13,12 +13,10 @@ exports[`should render Expense List item with Expense 1`] = `
     </h3>
   </NavLink>
   <p>
-     Description: 
-    Gum
-     Amount: 
-    195
-    , Created Date: 
-    0
+     
+    £195.00
+    -
+    1st January, 1970
   </p>
 </div>
 `;
