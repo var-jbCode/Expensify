@@ -8,6 +8,7 @@ import Help from '../components/Help'
 import Dashboard from '../components/Dashboard';
 import Edit from '../components/Edit';
 import PrivateRoute from './PrivateRoute'
+import PublicRoute from './PublicRoute'
 
 export const history = createHistory();
 
@@ -17,7 +18,7 @@ const AppRouter = () => {
         <Router history={history}>
             <div>
                 <Switch>
-                    <Route path="/" component={Login} exact={true} />
+                    <PublicRoute path="/" component={Login} exact={true} />
                     <PrivateRoute path="/dashboard" component={Dashboard} />
                     <PrivateRoute path="/create" component={Add} />
                     <PrivateRoute path="/edit/:id" component={Edit} />
