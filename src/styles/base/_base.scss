@@ -4,8 +4,15 @@ html {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
-    background: white;
-    color: black;
+    background: url('/public/images/pinkPig.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: $dark-gray;
+    line-height: 1.6 ;
 }
 
 .button {

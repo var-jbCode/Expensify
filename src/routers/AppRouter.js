@@ -22,7 +22,7 @@ const AppRouter = () => {
                     <PrivateRoute path="/dashboard" component={Dashboard} />
                     <PrivateRoute path="/create" component={Add} />
                     <PrivateRoute path="/edit/:id" component={Edit} />
-                    <Route path="/help" component={Help} />
+                    <PrivateRoute path="/help" component={Help} />
                     <Route component={NotFound} />
                 </Switch>
             </div>
