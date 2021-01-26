@@ -1,0 +1,33 @@
+.button {
+    height: 30;
+    width: auto;
+    text-align: center;
+    background: $piggy-pink;
+    padding: 10px;
+    font-weight: 300;
+    box-shadow: none; 
+    border-radius: 10px;
+    border: none;
+    font-size: $font-size-large;
+    color: $dark-gray;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.button__coin {
+    height: 30;
+    width: auto;
+    text-align: center;
+    background: $money;
+    padding: 10px;
+    font-weight: 300;
+    box-shadow: none; 
+    border-radius: 10px;
+    border: none;
+    font-size: $font-size-large;
+    color: $dark-gray;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+}

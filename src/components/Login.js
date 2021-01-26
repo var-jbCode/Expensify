@@ -7,7 +7,7 @@ export const Login = (props) => (
         <div className="box-layout__box">
             <h1 className="box-layout__title">Expensify</h1>
             <p>A more sophisticated Piggy Bank 🐖</p>
-            <button onClick={props.startLogin}>Login</button>
+            <button className="button" onClick={props.startLogin}>Login with Google</button>
         </div>
     </div>
 )
