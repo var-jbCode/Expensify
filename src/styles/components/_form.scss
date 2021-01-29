@@ -1,0 +1,16 @@
+.form {
+    width: 40vw;
+    height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+> * {
+    margin-bottom: $m-size;
+}
+}
+
+.form__error {
+margin: 00 $m-size;
+font-style: italic;
+}
+

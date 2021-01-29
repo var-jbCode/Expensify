@@ -1,16 +1,24 @@
 .page-header{
     background: $piggy-pink;
-    padding: $l-size;
-    margin-bottom: $l-size;
+    padding: $s-size;
+    margin-bottom: $s-size;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .page-header__actions {
     margin-top: $m-size;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .page-header__title{
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
     font-weight: 300;
+    white-space:pre-wrap;
+    
     span {
         font-weight: bold;
     }

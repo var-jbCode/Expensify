@@ -13,6 +13,7 @@
     display: inline-block;
     text-decoration: none;
     line-height: 1;
+    border: 1px $money solid;
 }
 
 .button__coin {
@@ -30,4 +31,11 @@
     display: inline-block;
     text-decoration: none;
     line-height: 1;
+    border: 1px $piggy-pink solid;
+}
+
+.button--secondary {
+    background: darken($piggy-pink, 20%);
+    width: 180px;
+    border: 1px $money solid;
 }

@@ -27,16 +27,14 @@ numeral.register('locale', 'GB', {
 numeral.locale('GB')
 
 export const ExpenseListItem = ({ description, amount, createdAt, id }) => (
-    <div>
-        <NavLink to={`/edit/${id}`} activeClassName="is-active" exact={true}>
-            <h3>{description}</h3>
-        </NavLink>
-        <p> {numeral(amount).format('$0,0.00')}
-            -
-            {moment(createdAt).format('Do MMMM, YYYY')}
-        </p>
-    </div>
-);
+    <NavLink className="list-item" to={`/edit/${id}`} activeClassName="is-active" exact={true}>
+        <div>
+            <h3 className="list-item__title">{description}</h3>
+            <span className="list-item__subtitle">{moment(createdAt).format('Do MMMM, YYYY')}</span>
+        </div>
+        <h3 className="list-item__data">{numeral(amount).format('$0,0.00')}</h3>
+    </NavLink>
+)
 
 
 

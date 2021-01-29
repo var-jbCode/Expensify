@@ -4,8 +4,7 @@
 
 .header__content{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     padding: $s-size 0;    
 }
 
@@ -15,4 +14,13 @@
     h1{
         margin: 0;
     }
+}
+
+.header__ExpenseList {
+    font-weight: 400;
+    font-size: large;
+    color: $dark-gray;
+    display: flex;
+    justify-content: space-around;
+    background:darken($piggy-pink, 10%) ;
 }
