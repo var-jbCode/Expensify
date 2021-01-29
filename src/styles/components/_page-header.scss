@@ -18,7 +18,10 @@
     margin: 0;
     font-weight: 300;
     white-space:pre-wrap;
-    
+    @media (max-width: $desktop-breakpoint) {
+        width: 300px;
+        display: none;
+    }
     span {
         font-weight: bold;
     }

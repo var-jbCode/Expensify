@@ -5,7 +5,10 @@
     color: $dark-gray;
     padding: $s-size $m-size;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    @media (max-width: $desktop-breakpoint) {
+        width: 300px
+    }
     
 }
 
@@ -64,4 +67,7 @@
     margin-bottom: $m-size;
     border: 1px solid $money;
     width: $expenses-box;
+    @media (max-width: $desktop-breakpoint) {
+        width: 300px
+    }
 }
